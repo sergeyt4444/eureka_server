@@ -1,6 +1,14 @@
 server:
   port: 8761
 eureka:
+  instance:
+    hostname: localhost
   client:
     registerWithEureka: false
     fetchRegistry: false
+    region: region-1
+security:
+  user:
+    name: admin
+    password: admin
+    role: SYSTEM
